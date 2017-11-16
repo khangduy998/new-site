@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.5/angular-material.css">
   <link rel="stylesheet" href="https://material.angularjs.org/1.1.5/docs.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
-  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body ng-app="MyApp" layout="row" ng-cloak>
   <!--
@@ -29,9 +30,7 @@
         </h1>
       </md-toolbar>
       <md-content layout-padding="" ng-controller="LeftCtrl" >
-        <md-button ng-click="close()" class="md-primary" hide-gt-md="">
-          Close Sidenav Left
-        </md-button>
+        
        
         <!--<p hide="" show-gt-md="">
           This sidenav is locked open on your device. To go back to the default behavior,
@@ -67,10 +66,10 @@
     <md-content flex="" layout-padding="">
 
       <div layout="row" layout-align="top center">
-        <md-button ng-click="toggleLeft()" class="md-primary" hide-gt-md="">
-            Nav
+        <md-button ng-click="toggleLeft()" class="md-icon-button md-primary" aria-label="Settings" hide-gt-md="">
+            <i class="material-icons">view_headline</i>
           </md-button>
-        <p>
+        <p style="margin-left: 150px">
         Info of page 3
         </p>
         <div>
